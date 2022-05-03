@@ -2,42 +2,27 @@ const routes = (handler) => [
   {
     method: 'POST',
     path: '/songs',
-    handler: handler.postSongHandler,
-    options: {
-      auth: 'musicapps_jwt',
-    },
+    handler: handler.postSongHandler, // postSongHandler hanya menerima dan menyimpan "satu" lagu.
   },
   {
     method: 'GET',
     path: '/songs',
-    handler: handler.getSongsHandler,
-    options: {
-      auth: 'musicapps_jwt',
-    },
+    handler: handler.getSongsHandler, // getSongsHandler mengembalikan "banyak" lagu.
   },
   {
     method: 'GET',
     path: '/songs/{id}',
-    handler: handler.getSongByIdHandler,
-    options: {
-      auth: 'musicapps_jwt',
-    },
+    handler: handler.getSongByIdHandler, // getSongByIdHandler mengembalikan "satu" lagu.
   },
   {
     method: 'PUT',
     path: '/songs/{id}',
-    handler: handler.putSongByIdHandler,
-    options: {
-      auth: 'musicapps_jwt',
-    },
+    handler: handler.putSongByIdHandler, // putSongByIdHandler hanya menerima dan mengubah "satu" lagu.
   },
   {
     method: 'DELETE',
     path: '/songs/{id}',
-    handler: handler.deleteSongByIdHandler,
-    options: {
-      auth: 'musicapps_jwt',
-    },
+    handler: handler.deleteSongByIdHandler, // deleteSongByHandler hanya menghapus "satu" lagu.
   },
 ];
 
