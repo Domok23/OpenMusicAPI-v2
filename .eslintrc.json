@@ -15,6 +15,7 @@
     "no-underscore-dangle": "off",
     "camelcase": "off",
     "object-curly-newline": "off",
-    "newline-per-chained-call": "off"
+    "newline-per-chained-call": "off",
+    "max-len" : "off"
   }
 }
